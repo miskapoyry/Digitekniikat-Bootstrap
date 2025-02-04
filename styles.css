@@ -1,0 +1,74 @@
+h1,
+h2,
+h3 {
+    font-family: 'Cinzel', serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    background-color: #EAD7B7;
+    color: #2e1f1b;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.styled-card {
+    background-color: #D2B48C;
+    box-shadow: 5px 5px 15px rgba(62, 62, 62, 0.3);
+}
+
+.navbar {
+    background: linear-gradient(90deg, #2C4A42, #4F6F52, #2C4A42);
+    font-size: 18px;
+    border-bottom: 1px solid #000000;
+    font-weight: 300;
+}
+
+.navbar .nav-link, .navbar-brand {
+    color: white !important; 
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link.active {
+    color: #D2B48C !important;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+    padding-bottom: 3px;
+}
+
+.navbar:hover .nav-link.active:not(:hover) {
+    color: white !important;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.navbar .nav-link:hover {
+    color: #D2B48C !important;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+    padding-bottom: 3px;
+}
+
+.btn-custom{
+    background-color:#2C4A42;
+    color: white;
+}
+
+.btn-custom:hover{
+    background-color:#4F6F52;
+    color: white;
+}
+
+.intro{
+    text-align: center;
+}
