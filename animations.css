@@ -2,7 +2,14 @@
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    animation: typing 3.5s steps(100, end);
+}
+
+/* ANIMAATIO TOIMII VAIN NÄYTÖILLÄ, JOTKA OVAT YLI 768PX LEVEITÄ, KOSKA MUUTEN NOWRAP AIHEUTTAA TEKSTIN LIIKKUMISEN YLI ALUEEN JA INLINE BLOCKIN ANIMAATIO ON HUONO */
+
+@media (min-width: 768px) {
+    .typing {
+        animation: typing 3.5s steps(100, end);
+    }
 }
 
 @keyframes typing {
