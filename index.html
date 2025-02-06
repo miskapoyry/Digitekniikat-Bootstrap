@@ -34,17 +34,13 @@
           <li class="nav-item me-2">
             <a class="nav-link" href="#tutki">Tutustu</a>
           </li>
-          <li class="nav-item me-2">
-            <a class="nav-link" href="#yhteys">Ota yhteyttä</a>
-          </li>
           <li class="nav-item dropdown me-2">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
+              Toimintamme
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#meista">Meistä</a></li>
+              <li><a class="dropdown-item" href="#yhteys">Ota yhteyttä</a></li>
             </ul>
           </li>
         </ul>
@@ -222,53 +218,95 @@
 
     <!-- TÄSTÄ ALKAA YHTEYDENOTTO OSIO, JOSSA ON ACCORDION, GRID SEKÄ TABLE -->
     
-    <section id="yhteys">
+    <section id="meista">
     
       <div class="container">
         <div class="mt-5 intro">
-          <h2>Ota Yhteyttä</h2>
-          <p>Heräsikö ajatuksia? Lue usein kysytyt kysymykset tai lähetä meille sähköpostia.</p>
+          <h2>Keitä me olemme?</h2>
         </div>
+      </div>
     
         <!-- ACCORDION TUOTETTU BS5 NOUDATELLEN JA TYYLIMUUTOKSILLA TEHTY SIITÄ ERILAINEN. ACCORDION SISÄLTÄÄ 3 KOHTAA -->
-        <!-- JOKAISESSA ACCORIONISSA ON HEADING, BODY JOSSA TEKSTIÄ JA KUVA SEKÄ SVG NUOLI. VAIN YKSI ELEMENTTI VOI OLLA SAMALLA AIKAA AUKI, EIKÄ MIKÄÄN OLE VALMIIKSI
-              AVATTUNA-->
-    
+        <!-- ENSIMMÄISESSA ACCORDIONISSA ON TEKSTIN LISÄKSI KUVA, TOISESSA ACCORDIONISSA ON PUOLESTAAN TAULUKKO JA KOLMANNESSA ON LYHYT LOMAKE -->
+        
         <div class="accordion mt-3" id="accordion">
           <div class="accordion-item">
             <h2 class="accordion-header" id="firstHeading">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Ensimmäinen
+                K: Mikä on fantaasikkojen tarkoitus?
               </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="firstHeading"
               data-bs-parent="#accordion">
-              <div class="accordion-body">Teksti</div>
+              <div class="accordion-body">
+                Tarkoituksemme on tuoda suomalaiset fantasiaharrastajat yhteen. Järjestämme tapaamisia viikottain ja pyrimme rakentamaan yhteisön, jonka yhteinen jaettu intohimo on fantasia. Sinun ei tarvitse olla
+                kokenut harrastaja, vaan voit olla vasta-alkaja tai vain kiinnostunut aiheesta. Tervetuloa mukaan! <br /> <br />
+                <img src="images/group.jpg" title="Yhteisömme retki vuodelta 2023" class="d-block w-100 rounded" alt="Kuva yhteisömme yhteiseltä retkeltä Repoveden kansallispuistoon vuonna 2023">
+              </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="secondHeading">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Toinen
+                K: Miten voin liittyä mukaan?
               </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="secondHeading"
               data-bs-parent="#accordion">
-              <div class="accordion-body">Teksti</div>
+              <div class="accordion-body">
+                Voit liittyä mukaan toimintaamme matalalla kynnyksellä tulemalla viikottaisiin tapaamisiimme.
+                Olemme koonneet viikottaiset tapaamispaikat ja -ajat alla olevaan taulukkoon. Voit valita itsellesi sopivimman ajan ja paikan.
+                <table class="table mt-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">Päivä</th>
+                      <th scope="col">Aika</th>
+                      <th scope="col">Paikka</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Maanantai</td>
+                      <td>18:00 - 20:00</td>
+                      <td>Helsinki, Keskustakirjasto Oodi</td>
+                    </tr>
+                    <tr>
+                      <td>Keskiviikko</td>
+                      <td>17:00 - 19:00</td>
+                      <td>Tampere, Pääkirjasto Metso</td>
+                    </tr>
+                    <tr>
+                      <td>Perjantai</td>
+                      <td>19:00 - 21:00</td>
+                      <td>Turku, Kaupunginkirjasto</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="thirdHeading">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Kolmas
+                K: Miten voin tukea toimintaanne?
               </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="thirdHeading"
               data-bs-parent="#accordion">
-              <div class="accordion-body">Teksti</div>
+              <div class="accordion-body">
+                Toimintamme on täysin vapaaehtoista ja avointa kaikille. Voit tukea toimintaamme osallistumalla tapaamisiin, jakamalla tietoa toiminnastamme ja kutsua ystäväsi mukaan. Voit myös tukea toimintaamme taloudellisesti lahjoittamalla varoja toimintaamme varten. <br />
+                <br />
+                Tue toimintaamme taloudellisesti täyttämällä alla oleva lomake ja olemme yhtyedessä lahjoittamiseen liittyen mahdollisimman pian. Kiitos tuestasi!
+                <form class="mt-3">
+                  <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sähköpostiosoite">
+                    <div id="emailHelp" class="form-text">Emme jaa sähköpostiosoitettasi kolmansille osapuolille.</div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
