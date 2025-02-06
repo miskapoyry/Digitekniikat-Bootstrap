@@ -73,8 +73,10 @@ body {
     text-align: center;
 }
 
-.accordion {
+#accordion {
     background-color: #EAD7B7 !important;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .accordion-button {
@@ -95,6 +97,7 @@ body {
 
 .accordion-body {
     background-color: #EAD7B7 !important;
+    font-weight: 500;
 }
 
 /* BS5 ACCORDIONIN IKONI ON MUUTETTU MUSTAKSI */
