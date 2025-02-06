@@ -72,3 +72,33 @@ body {
 .intro{
     text-align: center;
 }
+
+.accordion {
+    background-color: #EAD7B7 !important;
+}
+
+.accordion-button {
+    background-color: #EAD7B7 !important;
+    color: #2e1f1b !important;
+    font-weight: bold;
+    border-bottom: 2px solid #2e1f1b !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.accordion-item {
+    background-color: #EAD7B7 !important;
+    color: #2e1f1b !important;
+    border: none !important;
+    margin-bottom: 3px;
+}
+
+.accordion-body {
+    background-color: #EAD7B7 !important;
+}
+
+/* BS5 ACCORDIONIN IKONI ON MUUTETTU MUSTAKSI */
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>") !important;
+}

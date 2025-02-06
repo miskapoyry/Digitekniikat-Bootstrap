@@ -220,46 +220,54 @@
       </div>
     </section>
 
+    <!-- TÄSTÄ ALKAA YHTEYDENOTTO OSIO, JOSSA ON ACCORDION, GRID SEKÄ TABLE -->
+    
     <section id="yhteys">
+    
       <div class="container">
         <div class="mt-5 intro">
           <h2>Ota Yhteyttä</h2>
           <p>Heräsikö ajatuksia? Lue usein kysytyt kysymykset tai lähetä meille sähköpostia.</p>
         </div>
-        <div class="accordion accordion-flush mt-3" id="accordionFlush">
+    
+        <!-- ACCORDION TUOTETTU BS5 NOUDATELLEN JA TYYLIMUUTOKSILLA TEHTY SIITÄ ERILAINEN. ACCORDION SISÄLTÄÄ 3 KOHTAA -->
+        <!-- JOKAISESSA ACCORIONISSA ON HEADING, BODY JOSSA TEKSTIÄ JA KUVA SEKÄ SVG NUOLI. VAIN YKSI ELEMENTTI VOI OLLA SAMALLA AIKAA AUKI, EIKÄ MIKÄÄN OLE VALMIIKSI
+              AVATTUNA-->
+    
+        <div class="accordion mt-3" id="accordion">
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
+            <h2 class="accordion-header" id="firstHeading">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 Ensimmäinen
               </button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-              data-bs-parent="#accordionFlush">
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="firstHeading"
+              data-bs-parent="#accordion">
               <div class="accordion-body">Teksti</div>
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
+            <h2 class="accordion-header" id="secondHeading">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                 Toinen
               </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-              data-bs-parent="#accordionFlush">
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="secondHeading"
+              data-bs-parent="#accordion">
               <div class="accordion-body">Teksti</div>
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
+            <h2 class="accordion-header" id="thirdHeading">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                 Kolmas
               </button>
             </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-              data-bs-parent="#accordionFlush">
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="thirdHeading"
+              data-bs-parent="#accordion">
               <div class="accordion-body">Teksti</div>
             </div>
           </div>
