@@ -13,6 +13,7 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
 </head>
 
 <!-- MUISTA LAITTAA SIVULLE TITLET, KOMMENTOIDA AINA VÄLILLÄ KOODIA, SISENTÄÄ, META HOMMELIT YMS -->
@@ -71,7 +72,7 @@
 
       <div class="intro mt-5">
         <h2>Tutustu fantasiaan</h2>
-        <p>Matkaa maailmaan, jossa legendat heräävät eloon ja salaperäiset olennot odottavat löytäjäänsä...</p>
+        <p class="typing">Matkaa maailmaan, jossa legendat heräävät eloon ja salaperäiset olennot odottavat löytäjäänsä...</p>
       </div>
     
       <!-- 3 KORTTIA, JOSSA KÄYTETTY GRIDIÄ SIVULLE ASETTAMISEKSI. JOKAINEN KORTTI SISÄLTÄÄ IMAGEN, JOKA ON TOP, TITLEN, BODY TEKSTIÄ SEKÄ BUTTONIN, JOKA AVAA MODAALIN -->
@@ -118,7 +119,7 @@
       </div>
 
       <!-- BUTTONIEN MODAALIT, JOTKA ON TOIMIVAT ID ARVOLLA BUTTONEISTA. JOKAINEN ON RAKENTEELTAAN SAMANLAINEN, SISÄLTÄÄ HEADERIN JA BODYN-->
-
+      <!-- MODAALIEN TEKSTISISÄLLÖT, ELI BODY TEKSTIT OVAT LUOTU CHATGPT -KIELIMALLIN AVULLA -->
       <!-- ENSIMMÄINEN MODAL HAHMOISTA -->
 
       <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -216,6 +217,53 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="mt-5 intro">
+          <h2>Ota Yhteyttä</h2>
+          <p>Heräsikö ajatuksia? Lue usein kysytyt kysymykset tai lähetä meille sähköpostia.</p>
+        </div>
+        <div class="accordion accordion-flush mt-3" id="accordionFlush">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Ensimmäinen
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlush">
+              <div class="accordion-body">Teksti</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Toinen
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlush">
+              <div class="accordion-body">Teksti</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Kolmas
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlush">
+              <div class="accordion-body">Teksti</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
