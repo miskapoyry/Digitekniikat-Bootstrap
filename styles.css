@@ -105,3 +105,29 @@ body {
 .accordion-button::after {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>") !important;
 }
+
+.custom-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#customRange1::-webkit-slider-runnable-track{
+    background: linear-gradient(90deg, #2C4A42, #4F6F52, #2C4A42);
+}
+
+#customRange1::-webkit-slider-thumb {
+    background: white;
+    border: 1px solid #2e1f1b;
+}
+
+#inlineRadio1, #inlineRadio2 {
+    border: 1px solid #2e1f1b;
+}
+
+.custom-footer{
+    background: linear-gradient(90deg, #2C4A42, #4F6F52, #2C4A42);
+    color: white;
+    padding: 10px;
+    border-top: 1px solid #000000;
+}

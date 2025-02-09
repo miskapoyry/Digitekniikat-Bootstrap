@@ -311,12 +311,73 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="yhteys">
+
+      <div>
+        <h2 class="mt-5">Anna palautetta</h2>
+        <p class="intro">Annathan toiminnallemme palautetta, se on tärkeää meille.</p>
+      </div>
       
       <!-- YHTEYDENOTTOLOMAKE, JOKA ON TEHTY BOOTSTRAPIN FORM ELEMENTEILLÄ JA ISOMMILLA NÄYTÖILLÄ ON KUVA LIITETTY VASEMMALLE -->
+      <!-- LOMAKKEESSA ON SLIDER, JOKA ON TEHTY RANGEA KÄYTTÄEN-->
 
+      <div class="container mt-3">
+        <div class="row align-items-center">
+          <div class="col-md-3">
+            <img src="images/LOTR.jpg" class="d-block w-100 rounded" alt="...">
+          </div>
+          <div class="col-md-6 mt-3">
+            <label for="customRange1" class="form-label centered fw-bold">Kuinka onnistunutta toiminamme oli?</label>
+            <div class="d-flex justify-content-between">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+              <p>4</p>
+              <p>5</p>
+            </div>
+            <input type="range" class="form-range" min="1" max="5" step="1" id="customRange1">
+            <p class="centered fw-bold">Oliko toimintamme hyödyllistä?</p>
+            <div class="custom-form mt-3">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Kyllä</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Ei</label>
+              </div>
+            </div>
+            <div class="centered">
+            <button type="submit" class="btn btn-custom mt-3">Lähetä</button>
+          </div>
+          </div>
+          <div class="col-md-3">
+            <img src="images/LOTR.jpg" class="d-block w-100 rounded" alt="...">
+          </div>
+        </div>
+      </div>
+        
     </section>
 
   </main>
+
+  <footer class="mt-5 custom-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>© 2023 Fantasiaatikot</p>
+        </div>
+        <div class="col-md-6">
+          <p>Tekstiä</p>
+        </div>
+      </div>
+      <div class="line">
+        <hr>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
