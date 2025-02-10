@@ -145,3 +145,13 @@ body {
 .custom-table tbody td {
     background-color: #f8f9fa; /* Varmistaa värin taulukon soluille */
 }
+
+.modal-content {
+    background-color: #EAD7B7;
+    border: 1px solid #2e1f1b;
+}
+
+.modal-btn {
+    background-color: #2C4A42;
+    color: white;
+}
