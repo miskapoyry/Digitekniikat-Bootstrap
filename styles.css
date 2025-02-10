@@ -79,6 +79,12 @@ body {
     margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+    #accordion {
+        width: 100%;
+    }
+}
+
 .accordion-button {
     background-color: #EAD7B7 !important;
     color: #2e1f1b !important;
@@ -130,4 +136,12 @@ body {
     color: white;
     padding: 10px;
     border-top: 1px solid #000000;
+}
+
+.custom-table {
+    background-color: #f8f9fa !important; /* Pakottaa taustavärin */
+}
+
+.custom-table tbody td {
+    background-color: #f8f9fa; /* Varmistaa värin taulukon soluille */
 }
