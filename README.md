@@ -11,5 +11,6 @@ Fantasia -aiheinen **bootstrap sivu** tehty digiteknikoita käsittelevää kurss
 | **Cards**        | Tutustu osiossa 3 korttia, jotka sisältävät tietoa erilaisia fantasiaan liittyvistä asioista |
 | **Modal**        | Jokaisessa kortissa on modaali, joka aukeaa nappia painamalla, jotta käyttäjälle kerrotaan lisätietoja aiheesta |
 | **Carousel**       | Tutustu -osiossa toteutettu kolmen kuvan karuselli, jota ohjataan vasemmalla ja oikealla sivulla sijaitsevilla napeilla. Kuvat vaihtuvat fadella. |
-| **Haitari** | Ei toteutettu vielä |
-| **Taulukko**| Ei toteutettu vielä
+| **Haitari** | Meistä -osiossa toteutettu 3 kappaletta. Jokaisessa tekstiä ja yhdessä kuva, toisessa taulukko ja kolmannessa button. |
+| **Taulukko**| Taulukko Meistä -osion "Miten voin liittyä mukaan?" kohdassa |
+| **Form** | Palautelomake, jonka toiminnallisuutta ei ole toteutettu, mutta se toimii visuaalisesti. Sisältää useamman eri form elementin, tekstikentän, rangen 1-5 sekä inline check inputin. |

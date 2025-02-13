@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="animations.css">
+  <script src="scripts.js" defer></script>
 </head>
 
 <!-- MUISTA LAITTAA SIVULLE TITLET, KOMMENTOIDA AINA VÄLILLÄ KOODIA, SISENTÄÄ, META HOMMELIT YMS -->
@@ -307,6 +308,7 @@
                     <tr>
                       <th scope="col">Päivä</th>
                       <th scope="col">Aika</th>
+                      <th scope="col">Kaupunki</th>
                       <th scope="col">Paikka</th>
                     </tr>
                   </thead>
@@ -314,21 +316,26 @@
                     <tr>
                       <td>Maanantai</td>
                       <td>18:00</td>
-                      <td>Helsinki, Keskustakirjasto Oodi</td>
+                      <td>Helsinki</td>
+                      <td>Keskustakirjasto Oodi</td>
                     </tr>
                     <tr>
                       <td>Keskiviikko</td>
                       <td>17:00</td>
-                      <td>Tampere, Pääkirjasto Metso</td>
+                      <td>Tampere</td>
+                      <td>Pääkirjasto Metso</td>
                     </tr>
                     <tr>
                       <td>Perjantai</td>
                       <td>19:00</td>
-                      <td>Turku, Kaupunginkirjasto</td>
+                      <td>Turku</td>
+                      <td>Kaupunginkirjasto</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              Paikalle päästyäsi voit vain tulla sisään täysin maksutta. Tule ilmoittamaan
+              kokoontumisten ohjaajalle saapumisestasi ja täten voimme ottaa sinut mukaan toimintaamme.
             </div>
           </div>
         </div>
@@ -345,16 +352,17 @@
               Toimintamme on täysin vapaaehtoista ja avointa kaikille. Voit tukea toimintaamme osallistumalla tapaamisiin,
               jakamalla tietoa toiminnastamme ja kutsua ystäväsi mukaan. Voit myös tukea toimintaamme taloudellisesti
               lahjoittamalla varoja toimintaamme varten. <br />
-              <br />
-              Tue toimintaamme taloudellisesti täyttämällä alla oleva lomake ja olemme yhtyedessä lahjoittamiseen liittyen
-              mahdollisimman pian. Kiitos tuestasi!
-              <form class="mt-3">
-                <div class="mb-3">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Sähköpostiosoite">
-                  <div id="emailHelp" class="form-text">Emme jaa sähköpostiosoitettasi kolmansille osapuolille.</div>
+      
+              <div id="mailAlerts"></div>
+      
+              <div class="mt-3">
+                <input type="email" class="form-control" id="email" placeholder="Sähköposti">
+                <textarea class="form-control mt-1" id="message" rows="3" placeholder="Viesti"></textarea>
+                <div class="centered">
+                  <a class="btn btn-custom mt-3" onclick="sendFakeMail()">Lähetä sähköpostia</a>
                 </div>
-              </form>
+              </div>
+              <br />
             </div>
           </div>
         </div>
