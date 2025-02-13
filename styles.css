@@ -59,6 +59,17 @@ body {
     padding-bottom: 3px;
 }
 
+.nav-item .dropdown-menu a:hover {
+    color: white !important;
+    background: #2C4A42 !important;
+}
+
+.brand-logo {
+    position: relative;
+    top: -5px;
+    left: 10px;
+}
+
 .btn-custom{
     background-color:#2C4A42;
     color: white;
