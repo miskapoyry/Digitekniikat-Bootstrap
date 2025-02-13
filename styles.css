@@ -188,3 +188,41 @@ body {
 #yhteys, #tutki, #meista {
     scroll-margin-top: 100px;
 }
+
+.bi{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .bi {
+        padding: 0px 5px 0px 5px;
+    }
+    .footer-links span{
+        display: flex;
+        gap:20px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 768px) {
+    .bi {
+        margin: 0px 10px 0px 10px;
+        font-size: 20px;
+    }
+    .footer-links span{
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: white;
+}
