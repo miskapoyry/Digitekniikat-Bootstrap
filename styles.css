@@ -200,6 +200,13 @@ body {
     color: white;
 }
 
+.modal-btn:hover {
+    background-color: #2C4A42;
+    color: white;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
 .pictureframe {
     background-color: #2C4A42;
     padding: 10px 10px 0px 10px;
