@@ -30,19 +30,22 @@
   <script src="scripts.js" defer></script>
 </head>
 
-<!-- MUISTA LAITTAA SIVULLE TITLET, KOMMENTOIDA AINA VÄLILLÄ KOODIA, SISENTÄÄ, META HOMMELIT YMS -->
+<!-- TOIMIVA NAVBBAR  -->
 
 <body data-bs-spy="scroll" data-bs-target="#navbarNavDropdown">
 
   <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
     <div class="container">
+      <!-- BRAND NIMI TEKSTILLÄ SEKÄ LOGO KUVA LAIETTU -->
       <a class="navbar-brand" href="#">Fantasiaatikot <img src="images/DigitekniikkaLOGO.png" alt="Fantasiaatikot logo"
           style="width:40px;" class="brand-logo"></a>
+      <!-- PIENEMPIEN NÄYTTÖJEN HAMBURGER MENU -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <!-- KAIKKI LINKIT NAVIN SISÄLLÄ TARKKAILEVAT SECTION ID JA OHJAA SINNE -->
         <ul class="navbar-nav ms-auto">
           <li class="nav-item me-2">
             <a class="nav-link" aria-current="page" href="#etusivu">Etusivu</a>
@@ -54,6 +57,7 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Toimintamme
             </a>
+            <!-- DROPDOWN VALIKKO NAVISSA -->
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#meista">Meistä</a></li>
               <li><a class="dropdown-item" href="#yhteys">Palaute</a></li>
@@ -66,7 +70,7 @@
 
   <main id="content" class="container">
 
-    <!-- GRIDILLÄ TEHTY ETUSIVU -->
+    <!-- GRIDILLÄ TEHTY ETUSIVU, JOSSA KUVA JA H1 + TEKSTI TOISELLA PUOLELLA -->
     <section id="etusivu">
       <div class="container mt-5">
         <div class="row">
@@ -91,7 +95,7 @@
           löytäjäänsä...</p>
       </div>
 
-      <!-- 3 KORTTIA, JOSSA KÄYTETTY GRIDIÄ SIVULLE ASETTAMISEKSI. JOKAINEN KORTTI SISÄLTÄÄ IMAGEN, JOKA ON TOP, TITLEN, BODY TEKSTIÄ SEKÄ BUTTONIN, JOKA AVAA MODAALIN -->
+      <!-- 3 KORTTIA, JOSSA KÄYTETTY GRIDIÄ SIVULLE ASETTAMISEKSI. JOKAINEN KORTTI SISÄLTÄÄ IMAGEN, JOKA ON TOPISSA, TITLEN, BODY TEKSTIÄ SEKÄ BUTTONIN, JOKA AVAA MODAALIN -->
 
       <div class="container">
         <div class="row">
@@ -101,6 +105,7 @@
               <div class="card-body">
                 <h3 class="card-title">Maailmat</h3>
                 <p class="card-text centered">Matka mystisiin maailmoihin</p>
+                <!-- DATA-BS-TARGETIN AVULLA VOIDAAN KOHDISTAA TIETTYYN MODAALIIN -->
                 <div class="d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#firstModal">
                   <button class="btn btn-custom">Tutki Maailmoja</button>
                 </div>
@@ -261,16 +266,19 @@
         </div>
       </div>
 
-      <!-- KARUSELLI KOODI TÄNNE MUISTA !! ALT TEKSTIT!! -->
+      <!-- KARUSELLI, JOSSA ON 3 KOHDETTA -->
 
       <div id="carouselExampleFade" class="carousel slide carousel-fade mt-5">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/LOTR.jpg" class="d-block w-100 rounded" alt="Taru Sormusten Herrasta -elokuvan konnun kuvauspaikka Uudessa Seelannissa.">
+            <!-- JOKAISELLA ON KUVA, JOSSA ALT TEKSTI -->
+            <img src="images/LOTR.jpg" class="d-block w-100 rounded"
+              alt="Taru Sormusten Herrasta -elokuvan konnun kuvauspaikka Uudessa Seelannissa.">
+            <!-- SEKÄ TEKSTIÄ, JOSSA KUVAA ESITELLÄÄN -->
             <div class="carousel-caption d-none d-md-block">
               <h5>Taru Sormusten Herrasta: Shire</h5>
               <p>Kontu on vehreä ja idyllinen kylä Keski-Maassa, jossa hobitit elävät rauhallista elämäänsä.
-                 Se tunnetaan mukavasta tunnelmastaan, vehreistä kukkuloistaan ja pyöreäovista kodeistaan.
+                Se tunnetaan mukavasta tunnelmastaan, vehreistä kukkuloistaan ja pyöreäovista kodeistaan.
               </p>
             </div>
           </div>
@@ -285,14 +293,15 @@
           <div class="carousel-item">
             <img src="images/HP.jpg" class="d-block w-100 rounded"
               alt="Harry Potterista tuttu juna kuuluisalla junaradalla.">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Harry Potter: Hogwarts Express</h5>
-                <p>Hogwarts Express on ikoninen punainen höyryjuna, joka kuljettaa oppilaat 
-                  Tylypahkaan Lontoon King's Crossin laiturilta 9¾. Juna on täynnä taianomaista tunnelmaa,
-                   ystävyyttä ja seikkailuja.</p>
-              </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Harry Potter: Hogwarts Express</h5>
+              <p>Hogwarts Express on ikoninen punainen höyryjuna, joka kuljettaa oppilaat
+                Tylypahkaan Lontoon King's Crossin laiturilta 9¾. Juna on täynnä taianomaista tunnelmaa,
+                ystävyyttä ja seikkailuja.</p>
+            </div>
           </div>
         </div>
+        <!-- BUTTONIT, JOSTA VOI OHJATA MODAALIA EDES JA TAKAISIN -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -319,6 +328,7 @@
       <div class="accordion mt-3" id="accordion">
         <div class="accordion-item">
           <h2 class="accordion-header" id="firstHeading">
+            <!-- BUTTONIA PAINAMALLA ACCORDION BODY TULEE NÄKYVIIN. NÄIDEN BODY TEKSTIEN LUOMISESSA KÄYTETTY MYÖS CHATGPT -->
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
               K: Mikä on fantaasikkojen tarkoitus?
@@ -351,6 +361,7 @@
               Olemme koonneet viikottaiset tapaamispaikat ja -ajat alla olevaan taulukkoon. Voit valita itsellesi
               sopivimman
               ajan ja paikan.
+              <!-- KESKIMMÄISEEN ACCORDIONIIN ON LAITETTU TABLE, JOKA ON RESPONSIIVINEN -->
               <div class="table-responsive">
                 <table class="table table-bordered mt-3 custom-table">
                   <thead>
@@ -403,12 +414,15 @@
               jakamalla tietoa toiminnastamme ja kutsua ystäväsi mukaan. Voit myös tukea toimintaamme taloudellisesti
               lahjoittamalla varoja toimintaamme varten. <br />
 
+              <!-- TÄNNE TULEE JS KAUTTA ALERT JOS KAIKKIA KOHTIA EI OLE TÄYTETTY TAI LÄHETTÄMINEN ONNISTUU-->
               <div id="mailAlerts"></div>
 
+              <!-- KAKSI FORM ELEMENTTIÄ, INPUT EMAILILLE SEKÄ TEXT AREA VAPAALLE PALAUTTEELLE -->
               <div class="mt-3">
                 <input type="email" class="form-control" id="email" placeholder="Sähköposti">
                 <textarea class="form-control mt-1" id="message" rows="3" placeholder="Viesti"></textarea>
                 <div class="centered">
+                  <!-- BUTTON JOSTA ONCLICK KÄYNNISTÄÄ JS KOODIN -->
                   <a class="btn btn-custom mt-3" onclick="sendFakeMail()">Lähetä sähköpostia</a>
                 </div>
               </div>
@@ -424,20 +438,25 @@
       <div class="mt-5 pictureframe">
         <div class="row">
           <div class="col-md-4">
-            <img src="images/group2.jpg" class="d-block w-100 rounded black-shadow" alt="Kuva muutamasta jäsenestämme tapaamisessa.">
+            <img src="images/group2.jpg" class="d-block w-100 rounded black-shadow"
+              alt="Kuva muutamasta jäsenestämme tapaamisessa.">
             <p class="centered mt-2">Ryhmämme jäseniä</p>
           </div>
           <div class="col-md-4">
-            <img src="images/outfit.jpg" class="d-block w-100 rounded black-shadow" alt="Kuva jäsenestämme pukeutuneena Halloweenina.">
+            <img src="images/outfit.jpg" class="d-block w-100 rounded black-shadow"
+              alt="Kuva jäsenestämme pukeutuneena Halloweenina.">
             <p class="centered mt-2">Asuloistua Halloweenina</p>
           </div>
           <div class="col-md-4">
-            <img src="images/Oodi.jpg" class="d-block w-100 rounded black-shadow" alt="Kuva Oodi -kirjastosta Helsingissä kesäpäivänä">
+            <img src="images/Oodi.jpg" class="d-block w-100 rounded black-shadow"
+              alt="Kuva Oodi -kirjastosta Helsingissä kesäpäivänä">
             <p class="centered mt-2">Tapaamispaikkamme Oodi</p>
           </div>
         </div>
 
     </section>
+
+    <!-- TÄÄLTÄ ALKAA PALAUTE ALAOSIO -->
 
     <section id="yhteys">
 
@@ -446,20 +465,23 @@
         <p class="typing">Annathan toiminnallemme palautetta, se on tärkeää meille...</p>
       </div>
 
-
-      <!-- YHTEYDENOTTOLOMAKE, JOKA ON TEHTY BOOTSTRAPIN FORM ELEMENTEILLÄ JA ISOMMILLA NÄYTÖILLÄ ON KUVA LIITETTY VASEMMALLE -->
-      <!-- LOMAKKEESSA ON SLIDER, JOKA ON TEHTY RANGEA KÄYTTÄEN-->
+      <!-- PALAUTELOMAKE, JOSSA KOLME ELEMENTTIÄ
+       1. AVOIN PALAUTE -TEKSTIKENTTÄ
+       2. RANGE SLIDER
+       3. RADIO BUTTONIT
+      -->
 
       <div class="container mt-3">
         <div class="custom-form black-shadow">
           <div id="feedbackAlerts"></div>
           <div class="textInput mt-3">
-            <textarea id="freeFeedback" class="form-control mt-1" id="message" rows="3" placeholder="Avoin palaute"></textarea>
+            <textarea id="freeFeedback" class="form-control mt-1" id="message" rows="3"
+              placeholder="Avoin palaute"></textarea>
           </div>
-      
+
           <label for="customRange1" class="form-label centered fw-bold mt-3">Kuinka onnistunutta toiminamme oli?</label>
           <input type="range" class="form-range" min="1" max="5" step=".1" id="customRange1">
-      
+
           <p class="centered fw-bold mt-3">Oliko toimintamme hyödyllistä?</p>
           <div class="mt-1 inlineInput">
             <div class="form-check form-check-inline">
@@ -472,6 +494,7 @@
             </div>
           </div>
           <div class="centered mt-3">
+            <!-- ONCLICK ALOITTTAA JS KOODIN SUORITTAMISEN -->
             <button class="btn btn-custom mb-3" onclick="sendFakeFeedback()">Lähetä palaute</button>
           </div>
         </div>
@@ -481,11 +504,13 @@
 
   </main>
 
+  <!-- YKSINKERTAINEN FOOTER, JOSSA KOLME IKONIA, LINKIT ERI OSIOIHIN JA TRADEMARK -->
   <footer class="mt-5 custom-footer">
     <div class="container">
       <div class="row text-center">
         <span>
           <a href="https://instagram.com">
+            <!-- KÄYTETÄÄN I ELEMENTTIÄ JA IKONIT TULEVAT BOOTSTRAPISTA -->
             <i class="bi bi-instagram"></i>
           </a>
           <a href="https://facebook.com">
@@ -498,12 +523,14 @@
       </div>
       <div class="footer-links mt-3">
         <span>
+          <!-- ERI OSIOIDEN LINKIT -->
           <a href="#etusivu">Etusivu</a>
           <a href="#tutki">Tutustu</a>
           <a href="#meista">Meistä</a>
           <a href="#yhteys">Palaute</a>
         </span>
       </div>
+      <!-- VISUAALINEN VÄLIVIIVA -->
       <div class="line">
         <hr>
       </div>
