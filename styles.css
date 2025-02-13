@@ -258,3 +258,10 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
