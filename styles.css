@@ -1,3 +1,4 @@
+/* Headerin fontti, sen paino sekä keskitys */
 h1,
 h2,
 h3 {
@@ -6,6 +7,7 @@ h3 {
     text-align: center;
 }
 
+/* bodyn fontti, sen paino, väri ja fontin väri */
 body {
     font-family: 'EB Garamond', serif;
     font-weight: 500;
@@ -13,6 +15,7 @@ body {
     color: #2e1f1b;
 }
 
+/* custom luokka elementtien keskittämistä varten */
 .centered {
     display: flex;
     flex-direction: column;
@@ -20,11 +23,13 @@ body {
     align-items: center;
 }
 
+/* custom kortti, josta vaihdettu tausta ja laitettu varjoa */
 .styled-card {
     background-color: #D2B48C;
     box-shadow: 5px 5px 15px rgba(62, 62, 62, 0.3);
 }
 
+/* Navigaatioon taustaväri, fonttikoko, alareuna, linkkien väri valkoiseksi, active erivärinen ja allevivattu, hover korvaa activen, jotta valittavissa oleva linkki korostuu yksin */
 .navbar {
     background: linear-gradient(90deg, #2C4A42, #4F6F52, #2C4A42);
     font-size: 18px;
@@ -71,6 +76,7 @@ body {
     left: 10px;
 }
 
+/* Buttonia muutettu ja hover suurentaa sitä hieman */
 .btn-custom {
     background-color: #2C4A42;
     color: white;
@@ -87,18 +93,21 @@ body {
     text-align: center;
 }
 
+/* Accordioniin vaihdettu taustaväri, leveyttä pienennetty ja keskitetty */
 #accordion {
     background-color: #EAD7B7 !important;
     width: 80%;
     margin: 0 auto;
 }
 
+/* Puhelimella 100% */
 @media (max-width: 768px) {
     #accordion {
         width: 100%;
     }
 }
 
+/* Accordionin avaava button väri muutettu */
 .accordion-button {
     background-color: #EAD7B7 !important;
     color: #2e1f1b !important;
@@ -108,6 +117,7 @@ body {
     border-radius: 0 !important;
 }
 
+/* ITEMEILLE TAUSTAVÄRI SEKÄ BORDERIT POISTETTU */
 .accordion-item {
     background-color: #EAD7B7 !important;
     color: #2e1f1b !important;
@@ -121,11 +131,11 @@ body {
 }
 
 /* BS5 ACCORDIONIN IKONI ON MUUTETTU MUSTAKSI */
-
 .accordion-button::after {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>") !important;
 }
 
+/* PALAUTE FORMI KESKITETTY, LAITETTU SILLE OIKEAT VÄRIT JA BORDER */
 .custom-form {
     justify-content: center;
     align-items: center;
@@ -135,44 +145,52 @@ body {
     border: 1px solid #2e1f1b;
 }
 
+/* POISTETTU SININEN FOCUS JA LALITETTU VIHREÄ BORDER */
 .custom-form textarea:focus {
     outline: none;
     border: none;
     box-shadow: 0 0 5px rgba(44, 74, 66, 0.5);
 }
 
+/* KESKITÄ RADIO BUTTONIT */
 .inlineInput {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* PIENENNÄ TEKSTIN LEVEYTTÄ JA KESKITÄ */
 .textInput {
     width: 80%;
     display: flex;
     margin: 0 auto;
 }
 
+/* PIENENNÄ RANGEN LEVEYTTÄ JA KESKITÄ SE */
 #customRange1 {
     width: 80%;
     display: flex;
     margin: 0 auto;
 }
 
+/* SLIDERILLE GRADIENT VÄRI */
 #customRange1::-webkit-slider-runnable-track {
     background: linear-gradient(90deg, #2C4A42, #4F6F52, #2C4A42);
 }
 
+/* MUUTA RANGEN VEDETTÄVÄN OSAN VÄRI VALKOISEKSI JA LAITA BORDER */
 #customRange1::-webkit-slider-thumb {
     background: white;
     border: 1px solid #2e1f1b;
 }
 
+/* LAITA MOLEMMILLE RADIOBUTTONEILLE BORDER */
 #inlineRadio1,
 #inlineRadio2 {
     border: 1px solid #2e1f1b;
 }
 
+/* FOOTERILLE GRADIENT TAUSTA, VALKOINEN TEKSTI JA YLÄREUNA MUSTA */
 .custom-footer {
     background: linear-gradient(90deg, #2C4A42, #4F6F52, #2C4A42);
     color: white;
@@ -180,18 +198,21 @@ body {
     border-top: 1px solid #000000;
 }
 
+/* TABLEN YLIN OSIO TUMMEMPI VIHREÄ */
 .custom-table th {
     background-color: #2C4A42;
     color: white;
     border: 1px solid black;
 }
 
+/* ALEMPI VAALEAMPI VIHREÄ */
 .custom-table td {
     background-color: #4F6F52;
     color: white;
     border: 1px solid black;
 }
 
+/* MUUTA MODAALIN TAUSTAA YHTENÄISEKSI MUUN SIVUN KANSSA SEKÄ TEE BUTTONISTA SAMANLAINEN KUIN MUISTAKIN */
 .modal-content {
     background-color: #EAD7B7;
     border: 1px solid #2e1f1b;
@@ -209,6 +230,7 @@ body {
     transition: transform 0.2s ease-in-out;
 }
 
+/*KOLME KUVAA SISÄLTÄNEEN ELEMENTIN ERI TASUTAVÄRI, PYÖRISTETTY SEKÄ SHADOW */
 .pictureframe {
     background-color: #2C4A42;
     padding: 10px 10px 0px 10px;
@@ -217,16 +239,19 @@ body {
     box-shadow: 0 0 20px 5px rgba(44, 74, 66, 0.5);
 }
 
+/*YLEINEN MUSTA SHADOW */
 .black-shadow {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* LAITA MARGIN TOP HIEMAN, JOTTA LINKISTÄ PAINAMALLA CONTENT NÄKYY HYVIN */
 #yhteys,
 #tutki,
 #meista {
     scroll-margin-top: 100px;
 }
 
+/* IKONIT VALKOISIKSI SEKÄ FOOTERIIN PADDINGIA NIIDEN JA LINKKIEN VÄLIIN. PUHELIMELLE VÄHEMMÄN JA SUUREMMILLE NÄYTÖILLE ENEMMÄN */
 .bi {
     color: white;
 }
@@ -255,6 +280,7 @@ body {
     }
 }
 
+/* KESKITÄ LINKIT JA MUUTA TEKSTIN PAINOA */
 .footer-links {
     display: flex;
     justify-content: center;
@@ -262,16 +288,19 @@ body {
     font-weight: 300;
 }
 
+/* POISTA LINKKIEN ALLEVIIVAUS JA LAITA VÄRI VALKOISEKSI */ 
 .footer-links a {
     text-decoration: none;
     color: white;
 }
 
+/* PIENENNÄ LEVEYTTÄ JA KESKITÄ */
 #feedbackAlerts {
     width: 80%;
     margin: 0 auto;
 }
 
+/* LISÄÄ KARUSELLIN TEKSTEILLE LÄPINÄKYVÄ TAUSTA, JOTTA TEKSTIT NÄKYY PAREMMIN */
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
