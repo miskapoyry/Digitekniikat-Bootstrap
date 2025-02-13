@@ -80,3 +80,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
     typings.forEach(element => observer.observe(element));
 });
+
+function sendFakeFeedback() {
+  let freeFeedback = document.getElementById("freeFeedback").value.trim();
+  let selectedRadio = document.querySelector('input[name="inlineRadioOptions"]:checked');
+
+  // Tarkista onko feedback tai radiot empty
+  if (freeFeedback === "" || selectedRadio === null) {
+    feedbackAlert("Täytä kaikki kentät", "danger");
+    return;
+  }
+
+  // Onnistumiusen alert
+  feedbackAlert("Kiitos palautteesta!", "success");
+
+  // Tyhjennä kaikki
+  document.getElementById("freeFeedback").value = "";
+  selectedRadio.checked = false;
+}
+
+function feedbackAlert(message, color) {
+  /* ETSI OIKEA KOHTA KOODISTA, JOHON ALERT TULEE */
+  let feedbackAlerts = document.getElementById("feedbackAlerts");
+
+  /* LUO ALERT BOOTSTRAPILLA */
+  let alertBootstrap = `
+      <div class="alert alert-${color} show" role="alert">
+          ${color === "success" ? "Lähettäminen onnistui" : "Lähettäminen epäonnistui!"} ${message}
+      </div>
+  `;
+
+  /* LISÄÄ ALERT innerHTML, JOLLOIN SE MENEE HTML */
+  feedbackAlerts.innerHTML = alertBootstrap;
+
+  /* TYHJENNÄ innerHTML 3 SEKUNNIN JÄLKEEN */
+  setTimeout(() => {
+    feedbackAlerts.innerHTML = "";
+  }, 3000);
+}

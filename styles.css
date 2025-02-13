@@ -126,9 +126,36 @@ body {
 }
 
 .custom-form{
+    justify-content: center;
+    align-items: center;
+    background-color: #D2B48C;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #2e1f1b;
+}
+
+.custom-form textarea:focus{
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px rgba(44, 74, 66, 0.5);
+}
+
+.inlineInput{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.textInput{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+
+#customRange1 {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
 }
 
 #customRange1::-webkit-slider-runnable-track{
@@ -225,4 +252,9 @@ body {
 .footer-links a{
     text-decoration: none;
     color: white;
+}
+
+#feedbackAlerts{
+    width: 80%;
+    margin: 0 auto;
 }
