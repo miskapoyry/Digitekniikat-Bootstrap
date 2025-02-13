@@ -14,3 +14,4 @@ Fantasia -aiheinen **bootstrap sivu** tehty digiteknikoita käsittelevää kurss
 | **Haitari** | Meistä -osiossa toteutettu 3 kappaletta. Jokaisessa tekstiä ja yhdessä kuva, toisessa taulukko ja kolmannessa button. |
 | **Taulukko**| Taulukko Meistä -osion "Miten voin liittyä mukaan?" kohdassa |
 | **Form** | Palautelomake, jonka toiminnallisuutta ei ole toteutettu, mutta se toimii visuaalisesti. Sisältää useamman eri form elementin, tekstikentän, rangen 1-5 sekä inline check inputin. |
+| **Alert** | Meistä -osiossa toteutettu feikki sposti formi, jossa alertia käytetään epäonnistumisen näyttämiseen sekä onnistumisen näyttämiseen |

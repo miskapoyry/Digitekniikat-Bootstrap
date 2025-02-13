@@ -55,6 +55,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // ETSI KAIKKI TYPING CLASSIT
     let typings = document.querySelectorAll(".typing");
 
+    //MIKÄLI NÄYTTÄ ON MOBIILI, NIIN LAITA TEKSTI NÄKYMÄÄN ILMAN ANIMAATIOTA
+    if (window.innerWidth < 768) {
+        typings.forEach(element => {
+            element.style.width = "100%";
+            element.style.whiteSpace = "normal";
+        });
+        return;
+    }
+
     // KÄYTÄ INTERSECTION OBSERVERIA, JOTTA NÄHDÄÄN KUN ELEMENTTI ON NÄKYVISSÄ
     let observer = new IntersectionObserver(entries => {
         // FOR LOOPPAA JOKAINEN LÖYDETTY TYPING ELEMENTTI

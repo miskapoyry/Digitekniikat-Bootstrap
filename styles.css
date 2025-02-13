@@ -172,3 +172,19 @@ body {
     background-color: #2C4A42;
     color: white;
 }
+
+.pictureframe {
+    background-color: #2C4A42;
+    padding: 10px 10px 0px 10px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 5px rgba(44, 74, 66, 0.5);
+}
+
+.black-shadow {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#yhteys, #tutki, #meista {
+    scroll-margin-top: 100px;
+}
