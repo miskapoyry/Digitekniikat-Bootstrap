@@ -1,5 +1,6 @@
 
 /* ANIMAATIO TOIMII VAIN NÄYTÖILLÄ, JOTKA OVAT YLI 768PX LEVEITÄ, KOSKA MUUTEN NOWRAP AIHEUTTAA TEKSTIN LIIKKUMISEN YLI ALUEEN JA INLINE BLOCKIN ANIMAATIO ON HUONO */
+/* ANIMAATIO TAHALLAAN TYHJÄ, SILLÄ JS AVULLA SE KÄYNNISTYY KUN KÄYTTÄJÄ ON SEN KOHDALLA */
 
 @media (min-width: 768px) {
 
@@ -7,11 +8,9 @@
         overflow: hidden;
         white-space: nowrap;
         margin: 0 auto;
+        width: 0;
+        animation: none;
     }    
-
-    .typing {
-        animation: typing 3.5s steps(100, end);
-    }
 }
 
 @keyframes typing {

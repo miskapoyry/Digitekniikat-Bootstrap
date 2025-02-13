@@ -47,3 +47,27 @@ function bootstrapAlert(message, color) {
         mailAlerts.innerHTML = '';
     }, 3000);
 }
+
+/* NÄYTÄ KAIKKI CLASSILLA TYPING ANIMOIDUT TEKSTIT KERRAN KÄYTTÄJÄN NÄHDESSÄ ELEMENTIN */
+
+document.addEventListener("DOMContentLoaded", function () {
+    
+    // ETSI KAIKKI TYPING CLASSIT
+    let typings = document.querySelectorAll(".typing");
+
+    // KÄYTÄ INTERSECTION OBSERVERIA, JOTTA NÄHDÄÄN KUN ELEMENTTI ON NÄKYVISSÄ
+    let observer = new IntersectionObserver(entries => {
+        // FOR LOOPPAA JOKAINEN LÖYDETTY TYPING ELEMENTTI
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // MUUTA ANIMAATIO CSS NONESTA NIIN, ETTÄ SE NÄKYY JA TOIMII
+                entry.target.style.animation = "typing 5s steps(100, end) forwards";
+                // POISTA OBSERVAUS, JOTTA ANIMAATIOT NÄKYY VAIN KERRAN
+                observer.unobserve(entry.target);
+            }
+        });
+        // VAATII 60% NÄKYVYYDEN, JOTTA ANIMAATIO ALKAA
+    }, { threshold: 0.6 });
+
+    typings.forEach(element => observer.observe(element));
+});
